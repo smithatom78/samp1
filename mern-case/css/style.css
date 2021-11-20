@@ -1,0 +1,13 @@
+            body {
+                background-image: url("../images/to-do.jpg");
+                background-size: cover;
+            }
+            
+            header {
+                border: 1px solid white;
+                position: absolute;
+                left: 520px;
+                top: 400px;
+                width: 500px;
+                height: 290px;
+            }

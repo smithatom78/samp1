@@ -6,8 +6,17 @@
             header {
                 border: 1px solid white;
                 position: absolute;
-                left: 520px;
+                left: 550px;
                 top: 400px;
                 width: 400px;
+                height: 280px;
+            }
+            
+            table {
+                border: 1px solid white;
+                position: absolute;
+                left: 400px;
+                top: 360px;
+                width: 500px;
                 height: 290px;
             }

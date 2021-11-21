@@ -18,42 +18,41 @@
 
 <body>
     <header>
-        <div id="mylogin">
-            <div class="container">
+        <div class="container">
 
-                <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-                <div class="row">
-                    <div class=" col-6">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="row">
+                <div class=" col-6">
 
-                        <div class="myhead ">USER SIGNIN </div>
-                        <!--login form-->
-                        <form name="myform " onsubmit="return validate() ">
+                    <div class="myhead ">USER SIGNIN </div>
+                    <!--login form-->
+                    <form name="myform " onsubmit="return validate() ">
+
+                        <div class="mb-3 ">
+                            <label for="exampleInputusername " class="form-label ">Username <font color="red ">*</font></label>
+                            <input type="text " class="form-control " id="Username" required aria-describedby="username " placeholder="username ">
 
                             <div class="mb-3 ">
-                                <label for="exampleInputusername " class="form-label ">Username <font color="red ">*</font></label>
-                                <input type="text " class="form-control " id="username" required aria-describedby="username " onchange="return valusername() " placeholder="username ">
+                                <label for="exampleInputPassword1 " class="form-label ">Password <font color="red ">*</font></label>
+                                <input type="password" class="form-control " required id="Password1" placeholder="password ">
+                            </div>
 
-                                <div class="mb-3 ">
-                                    <label for="exampleInputPassword1 " class="form-label ">Password <font color="red ">*</font></label>
-                                    <input type="password " class="form-control " required id="Password1 " placeholder="password ">
-                                </div>
+                            <button type="submit " class="btn btn-success ">Sign In</button>&nbsp;&nbsp;&nbsp;
+                            <button type="reset " class="btn btn-danger ">cancel</button>
+                            <div class="mb-3 "><br>
+                                <button type="button" onclick="window.open( 'signup.html', '_blank')" class=" btn btn-warning ">NEW USER SIGNUP</button>
+                            </div>
+                    </form>
 
-                                <button type="submit " class="btn btn-secondary ">Sign In</button>&nbsp;&nbsp;&nbsp;
-                                <button type="reset " class="btn btn-primary ">cancel</button>
-                                <div class="mb-3 "><br>
-                                    <button type="submit " onclick="javascript:window.location='signup.html' " class="btn btn-warning ">NEW USER SIGNUP</button>
-                                </div>
-                        </form>
-
-                        </div>
                     </div>
                 </div>
-
-
             </div>
+
+
         </div>
     </header>
 </body>
-<script src=" "></script>
+<script src="js/todo.js ">
+</script>
 
 </html>

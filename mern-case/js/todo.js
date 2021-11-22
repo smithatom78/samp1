@@ -1,13 +1,10 @@
-let username = document.getElementById("Username");
-let password1 = document.getElementById("Password1");
+var username = document.getElementById("Username");
+var password1 = document.getElementById("Password1");
 
-function validate(callback) {
-
+function test(callback) {
     if (username.value == "admin" && password1.value == "12345") {
         alert("Authorized Login Successful");
-        //window.location.href = "../welcome.html"
-        //  window.location = "../welcome.html";
-        // window.location.replace("../welcome.html");
+        //    alert("hi");
         callback();
     } else if (username.value == "admin" && password1.value != "12345") {
         alert("Incorrect Password");
@@ -18,6 +15,7 @@ function validate(callback) {
     }
 }
 
-function display() {
-    window.location.href = "https://smithatom78.github.io/samp1/mern-case/welcome.html";
+function myFunction() {
+    // window.location.href = "https://whereyouwouldliketogo.com"
+    window.location.href = "/welcome.html";
 }

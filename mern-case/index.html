@@ -26,7 +26,7 @@
 
                     <div class="myhead ">USER SIGNIN </div>
                     <!--login form-->
-                    <form name="myform " onsubmit="return validate(display) ">
+                    <form name="myform">
 
                         <div class="mb-3 ">
                             <label for="exampleInputusername " class="form-label ">Username <font color="red ">*</font></label>
@@ -37,10 +37,10 @@
                                 <input type="password" class="form-control " required id="Password1" placeholder="password ">
                             </div>
 
-                            <button type="submit " class="btn btn-success ">Sign In</button>&nbsp;&nbsp;&nbsp;
+                            <button type="button" onclick="test(myFunction)" class="btn btn-success ">Sign In</button>&nbsp;&nbsp;&nbsp;
                             <button type="reset " class="btn btn-danger ">cancel</button>
                             <div class="mb-3 "><br>
-                                <button type="button" onclick="window.open( 'signup.html', '_blank')" class=" btn btn-warning ">NEW USER SIGNUP</button>
+                                <button type="button" onclick="window.open('signup.html', '_blank')" class=" btn btn-warning ">NEW USER SIGNUP</button>
                             </div>
                     </form>
 
@@ -52,7 +52,34 @@
         </div>
     </header>
 </body>
-<script src="js/todo.js ">
+<script src="js/todo.js">
 </script>
+<!--
+<script>
+    let username = document.getElementById("Username");
+let password1 = document.getElementById("Password1");
+    function test(callback) {
+
+        if (username.value == "admin" && password1.value == "12345") {
+            alert("Authorized Login Successful");
+            //window.location.href = "../welcome.html"
+            //  window.location = "../welcome.html";
+            // window.location.replace("../welcome.html");
+            callback();
+        } else if (username.value == "admin" && password1.value != "12345") {
+            alert("Incorrect Password");
+        } else if (username.value != "admin" && password1.value == "12345") {
+            alert("User Not Registered");
+        } else {
+            alert("Incorrect UserID and Password");
+        }
+    }
+
+
+    function myFunction() {
+        // window.location.href = "https://whereyouwouldliketogo.com"
+        window.location.href = "/signup.html"
+    }
+</script>-->
 
 </html>
